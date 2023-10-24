@@ -1,7 +1,7 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.routes.default_url_options = {
-  host: '0.0.0.0:3000'
+  host: 'shoe-shop.fun'
 }
 
 Rails.application.configure do
