@@ -19,7 +19,7 @@ const FormUploadInput: FC<TFormUploadInputProps> = ({errorMessage, onChange, isF
             <label htmlFor="img">Фото<sup>*</sup></label>
             <div className={cn(styles.fileWrapper, {[styles.uploaded]: isUploaded})}>
                 <label htmlFor="img">
-                    <input type="file" id="img" accept="image/*" onChange={changeHandler}/>
+                    <input type="file" id="img" accept="image/webp" onChange={changeHandler}/>
                 </label>
             </div>
             {errorMessage && <span>{errorMessage}</span>}

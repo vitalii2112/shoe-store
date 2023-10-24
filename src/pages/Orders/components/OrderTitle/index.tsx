@@ -10,7 +10,6 @@ type TTitleProps = {
     user_id?: number | null
 }
 const Title: FC<TTitleProps> = ({isLoading, amount, id, user_id}) => {
-    console.log(user_id, typeof user_id, typeof user_id === "number", user_id !== undefined)
     return (
         <div className={styles.orderTitle}>
             <h3>{isLoading ? <ContentLoader

@@ -79,7 +79,8 @@ const Cart: FC = () => {
     }
 
     const authHandler = () => {
-        navigate({...location}, {state: {isAuthOpen: true}})
+        navigate({...location}, {state: {isAuthOpen: true}});
+        closeHandler()
     }
 
     useEffect(() => {

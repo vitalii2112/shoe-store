@@ -74,7 +74,7 @@ const Burger: FC<TBurgerProps> = ({setIsAuthOpen}) => {
                             </li>
                             <li>
                                 <Link to="/orders">
-                                    <OrderSVG className={styles.strokeSVG}/>
+                                    <OrderSVG/>
                                     <span>Все заказы</span>
                                 </Link>
                             </li>
@@ -86,7 +86,7 @@ const Burger: FC<TBurgerProps> = ({setIsAuthOpen}) => {
                             </Link>
                         </li>
                         <li onClick={logoutHandler}>
-                            <LogoutSVG className={styles.otherSVG}/>
+                            <LogoutSVG/>
                             <span>Выйти из аккаунта</span>
                         </li>
                     </>}
