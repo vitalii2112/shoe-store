@@ -7,6 +7,6 @@ class Item < ApplicationRecord
   validates :price, presence: true, numericality: {greater_than: 0}
 
   def img_url
-    Rails.application.routes.url_helpers.url_for(img) if img.attached?
+    Rails.application.routes.url_helpers.rails_blob_path(img) if img.attached?
   end
 end
